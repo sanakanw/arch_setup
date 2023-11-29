@@ -1,28 +1,29 @@
 #!/bin/sh
 
-sudo pacman -S pulseaudio pulseaudio-alsa alsa-utils
+sudo pacman -S pulseaudio pulseaudio-alsa alsa-utils --noconfirm
 
-sudo pacman -S git python python2 python-pip base-devel nmap
+sudo pacman -S git python python-pip base-devel nmap --noconfirm
 
-sudo pacman -S xorg xorg-xinit pulseaudio pulseaudio-alsa
-sudo pacman -S bspwm sxhkd
+sudo pacman -S xorg xorg-xinit pulseaudio pulseaudio-alsa --noconfirm
+sudo pacman -S bspwm sxhkd --noconfirm
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 cd ..
 
-sudo pacman -S rxvt-unicode firefox thunar feh ibus ibus-anthy
-sudo pacman -S adobe-source-han-serif-jp-fonts papirus-icon-theme gtk2 gtk3 imagemagick
-sudo pacman -S network-manager-applet
-sudo pacman -S rofi picom
+sudo pacman -S rxvt-unicode firefox thunar feh ibus ibus-anthy --noconfirm
+sudo pacman -S adobe-source-han-serif-jp-fonts papirus-icon-theme gtk2 gtk3 imagemagick --noconfirm
+sudo pacman -S network-manager-applet --noconfirm
+sudo pacman -S rofi picom --noconfirm
 
 yay polybar
 yay ttf-iosevka
 yay pa-applet
 
-pip3 install pywal
+sudo pacman -S python-pywal --noconfirm
 
+mkdir ~/.config
 mkdir ~/.config/rofi
 mkdir ~/.config/sxhkd
 mkdir ~/.config/bspwm
@@ -40,3 +41,8 @@ cp polybar/launch.sh ~/.config/polybar/launch.sh
 cp gtk-2.0/gtkfilechooser.ini ~/.config/gtk-2.0/gtkfilechooser.ini
 cp gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini
 cp wal/colors-rofi-dark.rasi ~/.config/wal/templates
+
+cp .bashrc ~
+cp .Xresources ~
+cp .vimrc ~
+cp .xinitrc ~
