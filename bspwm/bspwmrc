@@ -26,4 +26,4 @@ bspc rule -a Screenkey manage=off
 nm-applet &
 pa-applet &
 picom &
-python -m pywal -i w/wwwwgtsonny.jpg &
+python -m pywal -i w/bg.jpg &

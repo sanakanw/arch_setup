@@ -33,7 +33,7 @@ mkdir ~/.config/gtk-3.0
 mkdir ~/.config/wal
 mkdir ~/.config/wal/templates
 
-cp config.rasi ~/.config/rofi/config.rasi
+cp rofi/config.rasi ~/.config/rofi/config.rasi
 cp sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 cp bspwm/bspwmrc ~/.config/bspwm/bspwmrc
 cp polybar/config ~/.config/polybar/config
@@ -46,3 +46,6 @@ cp .bashrc ~
 cp .Xresources ~
 cp .vimrc ~
 cp .xinitrc ~
+
+mkdir ~/w
+cp bg.jpg ~/w/bg.jpg
