@@ -16,6 +16,7 @@ sudo pacman -S kitty firefox feh ibus ibus-anthy maim rofi --noconfirm
 sudo pacman -S adobe-source-han-serif-jp-fonts papirus-icon-theme gtk3 imagemagick nerd-fonts --noconfirm
 sudo pacman -S network-manager-applet --noconfirm
 sudo pacman -S thunar tumbler gvfs thunar-volman
+sudo pacman -S lxappearance arc-gtk-theme
 
 yay polybar
 yay ttf-iosevka
