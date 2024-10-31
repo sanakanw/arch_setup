@@ -23,27 +23,27 @@ yay pa-applet
 
 sudo pacman -S python-pywal --noconfirm
 
-mkdir ~/.config
-mkdir ~/.config/rofi
-mkdir ~/.config/sxhkd
-mkdir ~/.config/bspwm
-mkdir ~/.config/polybar
-mkdir ~/.config/gtk-3.0
-mkdir ~/.config/wal
-mkdir ~/.config/wal/templates
+mkdir -p ~/.config
+mkdir -p ~/.config/rofi
+mkdir -p ~/.config/sxhkd
+mkdir -p ~/.config/bspwm
+mkdir -p ~/.config/polybar
+mkdir -p ~/.config/gtk-3.0
+mkdir -p ~/.config/wal
+mkdir -p ~/.config/wal/templates
 
-cp -r rofi ~/.config/rofi
-cp -r sxhkd ~/.config/sxhkd
-cp -r bspwm ~/.config/bspwm
-cp -r polybar ~/.config/polybar
-cp -r "gtk-3.0" "~/.config/gtk-3.0"
-cp -r wal ~/.config/wal
-cp -r nvim ~/.config/nvim
-cp -r kitty ~/.config/kitty
+cp -r rofi ~/.config
+cp -r sxhkd ~/.config
+cp -r bspwm ~/.config
+cp -r polybar ~/.config
+cp -r "gtk-3.0" "~/.config"
+cp -r wal ~/.config
+cp -r nvim ~/.config
+cp -r kitty ~/.config
 
 cp .bashrc ~
 cp .vimrc ~
 cp .xinitrc ~
 
-mkdir ~/w
+mkdir -p ~/w
 cp bg.jpg ~/w/bg.jpg
