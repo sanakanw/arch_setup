@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	urxvt
+	kitty
 
 # program launcher
 super + r
@@ -124,3 +124,11 @@ super + shift + {Right,Up}
 # move a floating window
 # super + {Left,Down,Up,Right}
 # 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#
+# Brightness
+#
+XF86MonBrightnessUp
+  xbacklight -inc 1
+XF86MonBrightnessDown
+  xbacklight -dec 1

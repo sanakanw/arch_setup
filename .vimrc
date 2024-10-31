@@ -1,27 +1,18 @@
-set nocompatible
-
-filetype off
-
-syntax on
-
 " filetype plugin indent on
-
+filetype off
+set nocompatible
 set modelines=0
-
 set number
-
 set ruler
-
 set visualbell
-
 set encoding=utf-8
-
 set wrap!
 set autoindent
 set expandtab
 set tabstop=2
 set shiftwidth=2
 set smarttab
+syntax on
 
 set whichwrap+=<,>,h,l,[,]
 
@@ -39,7 +30,11 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 nnoremap <C-j>	:tabprevious<CR>
 nnoremap <C-l>	:tabnext<CR>
 nnoremap <C-t>	:tabnew<CR>
+nnoremap <A-u>  :u<CR>
 
 inoremap <C-j>	<Esc>:tabprevious<CR>i
 inoremap <C-l>	<Esc>:tabnext<CR>i
 inoremap <C-t>	<Esc>:tabnew<CR>i
+inoremap <A-u>  <Esc>:u<CR>i
+
+" set background=dark

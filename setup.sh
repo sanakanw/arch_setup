@@ -12,10 +12,10 @@ cd yay
 makepkg -si
 cd ..
 
-sudo pacman -S rxvt-unicode firefox thunar feh ibus ibus-anthy --noconfirm
-sudo pacman -S adobe-source-han-serif-jp-fonts papirus-icon-theme gtk2 gtk3 imagemagick --noconfirm
+sudo pacman -S kitty firefox feh ibus ibus-anthy maim --noconfirm
+sudo pacman -S adobe-source-han-serif-jp-fonts papirus-icon-theme gtk3 imagemagick nerd-fonts --noconfirm
 sudo pacman -S network-manager-applet --noconfirm
-sudo pacman -S rofi picom --noconfirm
+sudo pacman -S thunar tumbler gvfs thunar-volman
 
 yay polybar
 yay ttf-iosevka
@@ -28,22 +28,20 @@ mkdir ~/.config/rofi
 mkdir ~/.config/sxhkd
 mkdir ~/.config/bspwm
 mkdir ~/.config/polybar
-mkdir ~/.config/gtk-2.0
 mkdir ~/.config/gtk-3.0
 mkdir ~/.config/wal
 mkdir ~/.config/wal/templates
 
-cp rofi/config.rasi ~/.config/rofi/config.rasi
-cp sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
-cp bspwm/bspwmrc ~/.config/bspwm/bspwmrc
-cp polybar/config ~/.config/polybar/config
-cp polybar/launch.sh ~/.config/polybar/launch.sh
-cp gtk-2.0/gtkfilechooser.ini ~/.config/gtk-2.0/gtkfilechooser.ini
-cp gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini
-cp wal/colors-rofi-dark.rasi ~/.config/wal/templates
+cp -r rofi ~/.config/rofi
+cp -r sxhkd ~/.config/sxhkd
+cp -r bspwm ~/.config/bspwm
+cp -r polybar ~/.config/polybar
+cp -r "gtk-3.0" "~/.config/gtk-3.0"
+cp -r wal ~/.config/wal
+cp -r nvim ~/.config/nvim
+cp -r kitty ~/.config/kitty
 
 cp .bashrc ~
-cp .Xresources ~
 cp .vimrc ~
 cp .xinitrc ~
 
